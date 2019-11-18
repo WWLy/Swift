@@ -4,7 +4,7 @@ var num_1: Int?
 print(num_1)
 
 let num_2 = Int("123")
-print(num_2)
+print(num_2!)
 if num_2 != nil {
     print("转换成功")
 } else {

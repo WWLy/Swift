@@ -7,5 +7,7 @@
         <page name='闭包'/>
         <page name='属性'/>
         <page name='方法'/>
+        <page name='继承'/>
+        <page name='初始化'/>
     </pages>
 </playground>

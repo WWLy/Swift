@@ -113,7 +113,7 @@ class Person2 {
 
 print("--------------")
 
-// 属性观察器, 只能给 lazy var 的存储属性添加属性观察器
+// 属性观察器, 只能给 var 的存储属性添加属性观察器
 // 在初始化器中赋值不会触发
 struct Circle2 {
     var radius: Double = 1.0 {
