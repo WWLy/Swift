@@ -79,3 +79,9 @@ class Person1 {
         
     }
 }
+
+
+var p1: Person1.Type = Person1.self
+p1.self
+var p2 = Person()
+type(of: p2) == Person.self
