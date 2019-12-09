@@ -9,5 +9,6 @@
         <page name='方法'/>
         <page name='继承'/>
         <page name='初始化'/>
+        <page name='错误处理'/>
     </pages>
 </playground>

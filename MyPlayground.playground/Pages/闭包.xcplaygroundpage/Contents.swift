@@ -45,6 +45,11 @@ exec(v1: 10, v2: 20, fn: +)
 
 
 // 尾随闭包
+
+exec(v1: 10, v2: 20) { (a, b) -> Int in
+    return a + b
+}
+
 exec(v1: 10, v2: 20) {
     v1, v2 in v1 + v2
 }
