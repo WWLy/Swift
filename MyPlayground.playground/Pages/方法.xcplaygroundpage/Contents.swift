@@ -62,3 +62,19 @@ var p1 = Point1()
 p1[0] = 11.1
 p1[1] = 22.2
 print(p1.x, p1.y)
+
+
+struct Student: Comparable {
+    static func < (lhs: Student, rhs: Student) -> Bool {
+        return true
+    }
+    
+    var age: Int
+    static func ask() {
+        print("ask")
+    }
+}
+
+let s1 = Student(age: 18)
+Student.ask()
+

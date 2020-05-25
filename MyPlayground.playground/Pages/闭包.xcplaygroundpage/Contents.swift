@@ -142,3 +142,15 @@ func getFirstPosition2(_ n1: Int, _ n2: @autoclosure() -> Int) -> Int {
     return n1 > 0 ? n1 : n2()
 }
 getFirstPosition2(10, 20)
+
+// @escaping 逃逸闭包, 函数参数是闭包的情况下使用, 闭包如果在函数外调用, 则视为逃逸闭包
+var gFn: (() -> ())?
+func test(_ fn: @escaping () -> ()) {
+    gFn = fn
+}
+
+func test1(_ fn: @escaping () -> ()) {
+    DispatchQueue.global().async {
+        fn()
+    }
+}

@@ -181,3 +181,46 @@ MemoryLayout<Password>.alignment
  如果有关联值, 则占用 占用内存最大的关联值 + 存储成员值的 1 个字节 + 内存对齐所需的额外字节
  */
 
+
+
+let age = 2
+if age >= 0 && age < 9 {
+    
+}
+
+if case 0...9 = age {
+    
+}
+
+ 
+
+//guard case 0...9 = age else { return }
+
+
+let ages: [Int?] = [2, 3, nil, 5]
+for case nil in ages {
+    print("有 nil 值")
+    break
+}
+
+
+// 自定义表达式模式匹配
+extension String {
+    static func ~= (pattern: (String) -> Bool, value: String) -> Bool {
+        pattern(value)
+    }
+}
+
+func hasPrefix(_ prefix: String) -> ((String) -> Bool) {
+    {
+        $0.hasPrefix(prefix)
+    }
+}
+
+var str = "123456"
+switch str {
+case hasPrefix("123"):
+    print("以 123 开头")
+default:
+    break
+}
