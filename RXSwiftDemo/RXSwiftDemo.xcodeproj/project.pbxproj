@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		ABA8C721595902595A46A293 /* Pods_RXSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357E93081EA96A7064E41101 /* Pods_RXSwiftDemo.framework */; };
+		F44ADCA8247E353A00A0C91F /* CYImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ADCA7247E353A00A0C91F /* CYImagePickerVC.swift */; };
+		F44ADCB2247E449200A0C91F /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ADCB1247E449200A0C91F /* RxImagePickerDelegateProxy.swift */; };
+		F44ADCB6247E477900A0C91F /* CYTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ADCB5247E477900A0C91F /* CYTableVC.swift */; };
+		F44ADCB8247E4FB600A0C91F /* CYTableSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ADCB7247E4FB600A0C91F /* CYTableSectionVC.swift */; };
 		F4696217247BB39F00321F50 /* CYUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4696216247BB39F00321F50 /* CYUIView+Extension.swift */; };
 		F4DDCF64247665EB0080B055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDCF63247665EB0080B055 /* AppDelegate.swift */; };
 		F4DDCF66247665EB0080B055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDCF65247665EB0080B055 /* SceneDelegate.swift */; };
@@ -21,6 +25,10 @@
 		29A30962F533890E34DF894F /* Pods-RXSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-RXSwiftDemo/Pods-RXSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		357E93081EA96A7064E41101 /* Pods_RXSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB77865326F3C2264141FCB /* Pods-RXSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-RXSwiftDemo/Pods-RXSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F44ADCA7247E353A00A0C91F /* CYImagePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYImagePickerVC.swift; sourceTree = "<group>"; };
+		F44ADCB1247E449200A0C91F /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		F44ADCB5247E477900A0C91F /* CYTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYTableVC.swift; sourceTree = "<group>"; };
+		F44ADCB7247E4FB600A0C91F /* CYTableSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYTableSectionVC.swift; sourceTree = "<group>"; };
 		F4696216247BB39F00321F50 /* CYUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CYUIView+Extension.swift"; sourceTree = "<group>"; };
 		F4DDCF60247665EB0080B055 /* RXSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DDCF63247665EB0080B055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +93,10 @@
 				F4DDCF63247665EB0080B055 /* AppDelegate.swift */,
 				F4DDCF65247665EB0080B055 /* SceneDelegate.swift */,
 				F4DDCF67247665EB0080B055 /* ViewController.swift */,
+				F44ADCA7247E353A00A0C91F /* CYImagePickerVC.swift */,
+				F44ADCB5247E477900A0C91F /* CYTableVC.swift */,
+				F44ADCB7247E4FB600A0C91F /* CYTableSectionVC.swift */,
+				F44ADCB1247E449200A0C91F /* RxImagePickerDelegateProxy.swift */,
 				F4696216247BB39F00321F50 /* CYUIView+Extension.swift */,
 				F4DDCF69247665EB0080B055 /* Main.storyboard */,
 				F4DDCF6C247665EE0080B055 /* Assets.xcassets */,
@@ -209,10 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44ADCB2247E449200A0C91F /* RxImagePickerDelegateProxy.swift in Sources */,
+				F44ADCB6247E477900A0C91F /* CYTableVC.swift in Sources */,
 				F4696217247BB39F00321F50 /* CYUIView+Extension.swift in Sources */,
+				F44ADCB8247E4FB600A0C91F /* CYTableSectionVC.swift in Sources */,
 				F4DDCF68247665EB0080B055 /* ViewController.swift in Sources */,
 				F4DDCF64247665EB0080B055 /* AppDelegate.swift in Sources */,
 				F4DDCF66247665EB0080B055 /* SceneDelegate.swift in Sources */,
+				F44ADCA8247E353A00A0C91F /* CYImagePickerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

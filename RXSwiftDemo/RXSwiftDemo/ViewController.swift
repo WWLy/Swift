@@ -36,6 +36,9 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+        let vc = CYTableSectionVC()
+        navigationController?.pushViewController(vc, animated: true)
+        
         test3()
         
         // 可监听序列
@@ -63,9 +66,16 @@ class ViewController: UIViewController {
         
         // 既是观察者又是监听者
         // AsyncSubject: 将在源 Observable 产生完成事件后，发出最后一个元素 (完成事件也会发送), 如果发生错误, 则只发送 error
-        // 
+        // PublishSubject: 将对观察者发送订阅后产生的元素, 而在订阅前发出的元素将不会发送给观察者, 如果发生错误, 则只发送 error
+        // ReplaySubject: 将对观察者发送全部的元素, 无论观察者何时进行订阅, 也可以设置条件选择元素
+        // BehaviorSubject: 将源 Observable 中最新的元素发送出来(如果不存在最新的元素, 就发出默认元素), 然后将随后产生的元素发送出来
+        // ControlProperty: 专门用于描述 UI 控件属性, 不会产生 error 事件, 一定在 MainScheduler 订阅和监听, 共享附加作用
         
         
+        // 释放资源, 解除监听
+        // DisposeBag: 清除包, 清除包被释放时, 内部所有 可被清除的资源 都会被清除
+        // takeUntil: 当 .. 时释放资源
+
         getRepo("").subscribe(onSuccess: { (json) in
             // 在这里创建观察者
             
